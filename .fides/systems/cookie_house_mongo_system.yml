@@ -1,0 +1,121 @@
+system:
+- fides_key: cookie_house_customer_database
+  organization_fides_key: default_organization
+  tags: null
+  name: Cookie House MongoDB
+  description: Additional database to store detailed data about users.
+  registry_id: null
+  meta: null
+  fidesctl_meta: null
+  system_type: Database
+  data_responsibility_title: null
+  egress:
+  - fides_key: cookie_house
+    type: system
+    data_categories: null
+  ingress: null
+  privacy_declarations:
+  - name: Analytics and reporting
+    data_categories:
+    - user.behavior.browsing_history
+    - user.behavior.media_consumption
+    - user.device.cookie_id
+    - user.device.device_id
+    - user.device.ip_address
+    - user.behavior.purchase_history
+    data_use: analytics.reporting.campaign_insights
+    data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+    data_subjects:
+    - customer
+    dataset_references: null
+    egress: null
+    ingress: null
+    features: []
+    flexible_legal_basis_for_processing: null
+    legal_basis_for_processing: Legitimate interests
+    impact_assessment_location: ''
+    retention_period: '365'
+    processes_special_category_data: false
+    special_category_legal_basis: null
+    data_shared_with_third_parties: false
+    third_parties: null
+    shared_categories: []
+    cookies: []
+    id: pri_e43dda68-d3c0-4583-8cf6-dfabae6af3d4
+  - name: Targeted advertising
+    data_categories:
+    - user.behavior.browsing_history
+    - user.contact
+    - user.device.cookie_id
+    - user.device.device_id
+    - user.device.ip_address
+    data_use: marketing.advertising.first_party.targeted
+    data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+    data_subjects:
+    - customer
+    dataset_references:
+    - mongo_test
+    egress: null
+    ingress: null
+    features: []
+    flexible_legal_basis_for_processing: null
+    legal_basis_for_processing: Legitimate interests
+    impact_assessment_location: null
+    retention_period: null
+    processes_special_category_data: false
+    special_category_legal_basis: null
+    data_shared_with_third_parties: false
+    third_parties: null
+    shared_categories: []
+    cookies: []
+    id: pri_429543c7-041c-4038-88c3-261cecc2f274
+  joint_controller: null
+  third_country_transfers: null
+  administrating_department: Engineering
+  data_protection_impact_assessment: null
+  vendor_id: null
+  dataset_references: []
+  processes_personal_data: true
+  exempt_from_privacy_regulations: false
+  reason_for_exemption: null
+  uses_profiling: false
+  legal_basis_for_profiling: []
+  does_international_transfers: false
+  legal_basis_for_transfers: []
+  requires_data_protection_assessments: false
+  dpa_location: null
+  dpa_progress: null
+  privacy_policy: null
+  legal_name: null
+  legal_address: null
+  responsibility: []
+  dpo: null
+  joint_controller_info: null
+  data_security_practices: ''
+  cookie_max_age_seconds: null
+  uses_cookies: false
+  cookie_refresh: false
+  uses_non_cookie_access: false
+  legitimate_interest_disclosure_url: null
+  created_at: '2023-11-02T14:25:01.073309+00:00'
+  connection_configs:
+    name: MongoDB Connector
+    key: cookie_house_customer_database_mongodb
+    description: null
+    connection_type: mongodb
+    access: write
+    created_at: '2023-11-02T14:25:02.342600+00:00'
+    updated_at: '2023-11-02T14:25:02.358988+00:00'
+    disabled: false
+    last_test_timestamp: null
+    last_test_succeeded: null
+    saas_config: null
+    secrets:
+      host: mongodb-test
+      port: 27017
+      defaultauthdb: mongo_test
+      username: mongo_user
+      password: '**********'
+    authorized: false
+  data_stewards: []
+  cookies: []

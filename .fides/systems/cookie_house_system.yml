@@ -1,0 +1,128 @@
+system:
+- fides_key: cookie_house
+  organization_fides_key: default_organization
+  tags:
+  - ecommerce
+  name: Cookie House eCommerce Application
+  description: Main Cookie House eCommerce application for displaying products and
+    processing orders.
+  registry_id: null
+  meta: null
+  fidesctl_meta: null
+  system_type: Application
+  data_responsibility_title: null
+  egress: null
+  ingress: null
+  privacy_declarations:
+  - name: Customer support
+    data_categories:
+    - user.behavior.browsing_history
+    - user.behavior.purchase_history
+    - user.contact.email
+    - user.device.ip_address
+    - user.location.imprecise
+    - user.name
+    - user.device.device_id
+    data_use: essential.service.operations.support
+    data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+    data_subjects:
+    - customer
+    dataset_references: null
+    egress: null
+    ingress: null
+    features: []
+    flexible_legal_basis_for_processing: null
+    legal_basis_for_processing: Legitimate interests
+    impact_assessment_location: ''
+    retention_period: '365'
+    processes_special_category_data: false
+    special_category_legal_basis: null
+    data_shared_with_third_parties: false
+    third_parties: null
+    shared_categories: []
+    cookies: []
+    id: pri_ccbfc670-3d36-46a2-b812-33f92d3678fd
+  - name: Performance monitoring
+    data_categories:
+    - user.device.device_id
+    - user.device.ip_address
+    - user.telemetry
+    - user.behavior
+    data_use: analytics.reporting.system.performance
+    data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+    data_subjects:
+    - customer
+    dataset_references: null
+    egress: null
+    ingress: null
+    features: []
+    flexible_legal_basis_for_processing: null
+    legal_basis_for_processing: Legitimate interests
+    impact_assessment_location: ''
+    retention_period: '365'
+    processes_special_category_data: false
+    special_category_legal_basis: null
+    data_shared_with_third_parties: false
+    third_parties: null
+    shared_categories: []
+    cookies: []
+    id: pri_5bbace0b-db1f-4af9-a248-d6c39a268b06
+  - name: Process ecommerce orders
+    data_categories:
+    - user.account.username
+    - user.behavior
+    - user.contact.address
+    - user.contact.email
+    - user.contact.phone_number
+    - user.telemetry
+    data_use: essential.service.operations
+    data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+    data_subjects:
+    - customer
+    dataset_references: null
+    egress: null
+    ingress: null
+    features: []
+    flexible_legal_basis_for_processing: null
+    legal_basis_for_processing: Legitimate interests
+    impact_assessment_location: ''
+    retention_period: '365'
+    processes_special_category_data: false
+    special_category_legal_basis: null
+    data_shared_with_third_parties: false
+    third_parties: null
+    shared_categories: []
+    cookies: []
+    id: pri_266a17f4-b788-4ad1-9b43-e2ac1f31f245
+  joint_controller: null
+  third_country_transfers: null
+  administrating_department: Engineering
+  data_protection_impact_assessment: null
+  vendor_id: null
+  dataset_references: []
+  processes_personal_data: true
+  exempt_from_privacy_regulations: false
+  reason_for_exemption: null
+  uses_profiling: false
+  legal_basis_for_profiling: []
+  does_international_transfers: false
+  legal_basis_for_transfers: []
+  requires_data_protection_assessments: false
+  dpa_location: null
+  dpa_progress: null
+  privacy_policy: null
+  legal_name: null
+  legal_address: null
+  responsibility: []
+  dpo: null
+  joint_controller_info: null
+  data_security_practices: ''
+  cookie_max_age_seconds: null
+  uses_cookies: false
+  cookie_refresh: false
+  uses_non_cookie_access: false
+  legitimate_interest_disclosure_url: null
+  created_at: '2023-11-02T14:24:59.901424+00:00'
+  connection_configs: null
+  data_stewards: []
+  cookies: []

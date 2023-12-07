@@ -1,0 +1,130 @@
+system:
+- fides_key: stripe
+  organization_fides_key: default_organization
+  tags:
+  - finance
+  name: Stripe
+  description: Payment processing provider
+  registry_id: null
+  meta: null
+  fidesctl_meta: null
+  system_type: ''
+  data_responsibility_title: null
+  egress:
+  - fides_key: cookie_house_postgresql_database
+    type: system
+    data_categories: null
+  - fides_key: cookie_house
+    type: system
+    data_categories: null
+  ingress:
+  - fides_key: cookie_house
+    type: system
+    data_categories: null
+  privacy_declarations:
+  - name: Fraud Detection & Prevention
+    data_categories:
+    - user.device.ip_address
+    - user.financial.credit_card
+    - user.location.imprecise
+    - user.name
+    - user.behavior.purchase_history
+    data_use: essential.fraud_detection
+    data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+    data_subjects:
+    - customer
+    dataset_references: null
+    egress: null
+    ingress: null
+    features: []
+    flexible_legal_basis_for_processing: null
+    legal_basis_for_processing: Legitimate interests
+    impact_assessment_location: ''
+    retention_period: '365'
+    processes_special_category_data: false
+    special_category_legal_basis: null
+    data_shared_with_third_parties: false
+    third_parties: null
+    shared_categories: []
+    cookies: []
+    id: pri_27756d80-a347-419f-a8be-a09dbe44186b
+  - name: Payment Processing
+    data_categories:
+    - user.financial.credit_card
+    - user.name
+    - user.contact.address
+    data_use: essential.service.payment_processing
+    data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+    data_subjects:
+    - customer
+    dataset_references: null
+    egress: null
+    ingress: null
+    features: []
+    flexible_legal_basis_for_processing: null
+    legal_basis_for_processing: Legitimate interests
+    impact_assessment_location: ''
+    retention_period: '30'
+    processes_special_category_data: false
+    special_category_legal_basis: null
+    data_shared_with_third_parties: false
+    third_parties: null
+    shared_categories: []
+    cookies: []
+    id: pri_916a313c-900c-4f8d-a482-318986fbd915
+  joint_controller: null
+  third_country_transfers: null
+  administrating_department: Finance
+  data_protection_impact_assessment: null
+  vendor_id: null
+  dataset_references: []
+  processes_personal_data: true
+  exempt_from_privacy_regulations: false
+  reason_for_exemption: null
+  uses_profiling: false
+  legal_basis_for_profiling: []
+  does_international_transfers: true
+  legal_basis_for_transfers:
+  - SCCs
+  requires_data_protection_assessments: false
+  dpa_location: null
+  dpa_progress: null
+  privacy_policy: https://stripe.com/privacy
+  legal_name: Stripe, Inc.
+  legal_address: '354 Oyster Point Boulevard,
+
+    South San Francisco,
+
+    California, 94080.'
+  responsibility:
+  - Processor
+  dpo: privacy@stripe.com
+  joint_controller_info: ''
+  data_security_practices: ''
+  cookie_max_age_seconds: null
+  uses_cookies: false
+  cookie_refresh: false
+  uses_non_cookie_access: false
+  legitimate_interest_disclosure_url: null
+  created_at: '2023-11-02T14:25:42.140176+00:00'
+  connection_configs:
+    name: Stripe Connector
+    key: stripe_connector
+    description: null
+    connection_type: saas
+    access: write
+    created_at: '2023-11-02T14:25:02.392423+00:00'
+    updated_at: '2023-11-02T14:42:00.704904+00:00'
+    disabled: false
+    last_test_timestamp: '2023-11-02T14:42:01.143072+00:00'
+    last_test_succeeded: true
+    saas_config:
+      fides_key: stripe_connector
+      name: Stripe
+      type: stripe
+    secrets:
+      api_key: '**********'
+      domain: api.stripe.com
+    authorized: false
+  data_stewards: []
+  cookies: []

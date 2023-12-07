@@ -1,0 +1,151 @@
+system:
+- fides_key: hubspot
+  organization_fides_key: default_organization
+  tags:
+  - crm
+  name: Hubspot
+  description: Hubspot is a CRM platform for sales, marketing and communications.
+  registry_id: null
+  meta: null
+  fidesctl_meta: null
+  system_type: ''
+  data_responsibility_title: null
+  egress:
+  - fides_key: cookie_house_customer_database
+    type: system
+    data_categories: null
+  ingress:
+  - fides_key: cookie_house
+    type: system
+    data_categories: null
+  privacy_declarations:
+  - name: Email Marketing
+    data_categories:
+    - user.contact.email
+    - user.name
+    - user.name.first
+    - user.behavior.browsing_history
+    data_use: marketing.communications.email
+    data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+    data_subjects:
+    - customer
+    dataset_references: null
+    egress: null
+    ingress: null
+    features: []
+    flexible_legal_basis_for_processing: null
+    legal_basis_for_processing: Consent
+    impact_assessment_location: ''
+    retention_period: '365'
+    processes_special_category_data: false
+    special_category_legal_basis: null
+    data_shared_with_third_parties: false
+    third_parties: null
+    shared_categories: []
+    cookies: []
+    id: pri_4ad65522-99ae-4dab-be1a-04192e66f23e
+  - name: SMS Marketing
+    data_categories:
+    - user.behavior.browsing_history
+    - user.contact.phone_number
+    - user.location
+    - user.location.imprecise
+    data_use: marketing.communications.sms
+    data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+    data_subjects:
+    - customer
+    dataset_references: null
+    egress: null
+    ingress: null
+    features: []
+    flexible_legal_basis_for_processing: null
+    legal_basis_for_processing: Consent
+    impact_assessment_location: ''
+    retention_period: '365'
+    processes_special_category_data: false
+    special_category_legal_basis: null
+    data_shared_with_third_parties: false
+    third_parties: null
+    shared_categories: []
+    cookies: []
+    id: pri_e6f91764-05f7-4994-af64-907354d0dbe0
+  - name: System Nofications
+    data_categories:
+    - user.contact.email
+    - user.device.ip_address
+    - user.name
+    - user.location.imprecise
+    data_use: essential.service.notifications.email
+    data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+    data_subjects:
+    - customer
+    dataset_references: null
+    egress: null
+    ingress: null
+    features: []
+    flexible_legal_basis_for_processing: null
+    legal_basis_for_processing: Legitimate interests
+    impact_assessment_location: ''
+    retention_period: '180'
+    processes_special_category_data: false
+    special_category_legal_basis: null
+    data_shared_with_third_parties: false
+    third_parties: null
+    shared_categories: []
+    cookies: []
+    id: pri_85ccf213-8342-4dea-8094-d528a647cc65
+  joint_controller: null
+  third_country_transfers: null
+  administrating_department: Marketing
+  data_protection_impact_assessment: null
+  vendor_id: null
+  dataset_references: []
+  processes_personal_data: true
+  exempt_from_privacy_regulations: false
+  reason_for_exemption: null
+  uses_profiling: false
+  legal_basis_for_profiling: []
+  does_international_transfers: false
+  legal_basis_for_transfers: []
+  requires_data_protection_assessments: false
+  dpa_location: null
+  dpa_progress: null
+  privacy_policy: https://legal.hubspot.com/privacy-policy
+  legal_name: Hubspot, Inc.
+  legal_address: '2 Canal Park
+
+    Cambridge, MA 02141
+
+    United States'
+  responsibility:
+  - Processor
+  dpo: privacy@hubspot.com
+  joint_controller_info: ''
+  data_security_practices: ''
+  cookie_max_age_seconds: null
+  uses_cookies: false
+  cookie_refresh: false
+  uses_non_cookie_access: false
+  legitimate_interest_disclosure_url: null
+  created_at: '2023-11-02T14:25:42.186200+00:00'
+  connection_configs:
+    name: Hubspot Connector
+    key: hubspot_connector
+    description: null
+    connection_type: saas
+    access: write
+    created_at: '2023-11-02T14:25:02.966833+00:00'
+    updated_at: '2023-11-02T15:19:24.858963+00:00'
+    disabled: false
+    last_test_timestamp: '2023-11-02T15:19:25.144983+00:00'
+    last_test_succeeded: true
+    saas_config:
+      fides_key: hubspot_connector
+      name: HubSpot
+      type: hubspot
+    secrets:
+      private_app_token: '**********'
+      domain: api.hubapi.com
+    authorized: false
+  data_stewards: []
+  cookies: []

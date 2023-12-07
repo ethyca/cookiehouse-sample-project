@@ -1,0 +1,24 @@
+organization:
+- fides_key: default_organization
+  organization_fides_key: default_organization
+  tags: null
+  name: Cookie House
+  description: Cookies online, done right!
+  organization_parent_key: null
+  controller:
+    name: Con Troller
+    address: 123 Example Street, New York, NY, USA
+    email: controller@example.com
+    phone: +1 555 555 5555
+  data_protection_officer:
+    name: DataPro Tection
+    address: 123 Example Street, New York, NY, USA
+    email: dpo@example.com
+    phone: +1 555 555 5555
+  fidesctl_meta: null
+  representative:
+    name: Rep Resentative
+    address: 123 Example Stree, New York, NY, USA
+    email: representative@example.com
+    phone: +1 555 555 5555
+  security_policy: https://fid.es/privacy

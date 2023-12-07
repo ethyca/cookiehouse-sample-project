@@ -1,0 +1,970 @@
+dataset:
+- fides_key: mongo_test
+  organization_fides_key: default_organization
+  tags: null
+  name: Mongo Example Test Dataset
+  description: Example of a Mongo dataset that contains 'details' about customers
+    defined in the 'postgres_example_test_dataset'
+  meta: null
+  data_categories: null
+  data_qualifier: null
+  fides_meta: null
+  joint_controller: null
+  retention: null
+  third_country_transfers: null
+  collections:
+  - name: aircraft
+    description: null
+    data_categories: null
+    data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+    retention: null
+    fields:
+    - name: _id
+      description: null
+      data_categories:
+      - system.operations
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references: null
+        identity: null
+        primary_key: true
+        data_type: object_id
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields: null
+    - name: model
+      description: null
+      data_categories:
+      - system.operations
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references: null
+        identity: null
+        primary_key: null
+        data_type: string
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields: null
+    - name: planes
+      description: null
+      data_categories:
+      - system.operations
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references:
+        - dataset: mongo_test
+          field: flights.plane
+          direction: from
+        identity: null
+        primary_key: null
+        data_type: string[]
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields: null
+    fides_meta: null
+  - name: conversations
+    description: null
+    data_categories: null
+    data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+    retention: null
+    fields:
+    - name: _id
+      description: null
+      data_categories:
+      - system.operations
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references: null
+        identity: null
+        primary_key: true
+        data_type: object_id
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields: null
+    - name: thread
+      description: null
+      data_categories: null
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references: null
+        identity: null
+        primary_key: null
+        data_type: object[]
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields:
+      - name: comment
+        description: null
+        data_categories: null
+        data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+        retention: null
+        fides_meta:
+          references: null
+          identity: null
+          primary_key: null
+          data_type: string
+          length: null
+          return_all_elements: null
+          read_only: null
+        fields: null
+      - name: message
+        description: null
+        data_categories: null
+        data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+        retention: null
+        fides_meta:
+          references: null
+          identity: null
+          primary_key: null
+          data_type: string
+          length: null
+          return_all_elements: null
+          read_only: null
+        fields: null
+      - name: chat_name
+        description: null
+        data_categories:
+        - user.name
+        data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+        retention: null
+        fides_meta:
+          references: null
+          identity: null
+          primary_key: null
+          data_type: string
+          length: null
+          return_all_elements: null
+          read_only: null
+        fields: null
+      - name: ccn
+        description: null
+        data_categories:
+        - user.financial.bank_account
+        data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+        retention: null
+        fides_meta:
+          references: null
+          identity: null
+          primary_key: null
+          data_type: string
+          length: null
+          return_all_elements: null
+          read_only: null
+        fields: null
+    fides_meta: null
+  - name: customer_details
+    description: null
+    data_categories: null
+    data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+    retention: null
+    fields:
+    - name: _id
+      description: null
+      data_categories:
+      - system.operations
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references: null
+        identity: null
+        primary_key: true
+        data_type: null
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields: null
+    - name: birthday
+      description: null
+      data_categories:
+      - user.demographic.date_of_birth
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references: null
+        identity: null
+        primary_key: null
+        data_type: string
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields: null
+    - name: children
+      description: null
+      data_categories:
+      - user.childrens
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references: null
+        identity: null
+        primary_key: null
+        data_type: string[]
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields: null
+    - name: comments
+      description: null
+      data_categories: null
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references: null
+        identity: null
+        primary_key: null
+        data_type: object[]
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields:
+      - name: comment_id
+        description: null
+        data_categories: null
+        data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+        retention: null
+        fides_meta:
+          references:
+          - dataset: mongo_test
+            field: conversations.thread.comment
+            direction: to
+          identity: null
+          primary_key: null
+          data_type: string
+          length: null
+          return_all_elements: null
+          read_only: null
+        fields: null
+    - name: customer_id
+      description: null
+      data_categories:
+      - user.unique_id
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references:
+        - dataset: postgres_example_test_dataset
+          field: customer.id
+          direction: from
+        identity: null
+        primary_key: null
+        data_type: null
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields: null
+    - name: emergency_contacts
+      description: null
+      data_categories: null
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references: null
+        identity: null
+        primary_key: null
+        data_type: object[]
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields:
+      - name: name
+        description: null
+        data_categories:
+        - user.name
+        data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+        retention: null
+        fides_meta:
+          references: null
+          identity: null
+          primary_key: null
+          data_type: string
+          length: null
+          return_all_elements: null
+          read_only: null
+        fields: null
+      - name: relationship
+        description: null
+        data_categories: null
+        data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+        retention: null
+        fides_meta:
+          references: null
+          identity: null
+          primary_key: null
+          data_type: string
+          length: null
+          return_all_elements: null
+          read_only: null
+        fields: null
+      - name: phone
+        description: null
+        data_categories:
+        - user.contact.phone_number
+        data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+        retention: null
+        fides_meta:
+          references: null
+          identity: null
+          primary_key: null
+          data_type: string
+          length: null
+          return_all_elements: null
+          read_only: null
+        fields: null
+    - name: gender
+      description: null
+      data_categories:
+      - user.demographic.gender
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references: null
+        identity: null
+        primary_key: null
+        data_type: string
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields: null
+    - name: travel_identifiers
+      description: null
+      data_categories: null
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references: null
+        identity: null
+        primary_key: null
+        data_type: string[]
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields: null
+    - name: workplace_info
+      description: null
+      data_categories: null
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references: null
+        identity: null
+        primary_key: null
+        data_type: object
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields:
+      - name: employer
+        description: null
+        data_categories: null
+        data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+        retention: null
+        fides_meta:
+          references: null
+          identity: null
+          primary_key: null
+          data_type: string
+          length: null
+          return_all_elements: null
+          read_only: null
+        fields: null
+      - name: position
+        description: null
+        data_categories:
+        - user.job_title
+        data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+        retention: null
+        fides_meta:
+          references: null
+          identity: null
+          primary_key: null
+          data_type: string
+          length: null
+          return_all_elements: null
+          read_only: null
+        fields: null
+      - name: direct_reports
+        description: null
+        data_categories:
+        - user.name
+        data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+        retention: null
+        fides_meta:
+          references: null
+          identity: null
+          primary_key: null
+          data_type: string[]
+          length: null
+          return_all_elements: null
+          read_only: null
+        fields: null
+    fides_meta: null
+  - name: customer_feedback
+    description: null
+    data_categories: null
+    data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+    retention: null
+    fields:
+    - name: _id
+      description: null
+      data_categories:
+      - system.operations
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references: null
+        identity: null
+        primary_key: true
+        data_type: object_id
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields: null
+    - name: customer_information
+      description: null
+      data_categories: null
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta: null
+      fields:
+      - name: email
+        description: null
+        data_categories: null
+        data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+        retention: null
+        fides_meta:
+          references: null
+          identity: email
+          primary_key: null
+          data_type: string
+          length: null
+          return_all_elements: null
+          read_only: null
+        fields: null
+      - name: phone
+        description: null
+        data_categories:
+        - user.contact.phone_number
+        data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+        retention: null
+        fides_meta:
+          references: null
+          identity: null
+          primary_key: null
+          data_type: string
+          length: null
+          return_all_elements: null
+          read_only: null
+        fields: null
+      - name: internal_customer_id
+        description: null
+        data_categories:
+        - system.operations
+        data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+        retention: null
+        fides_meta:
+          references: null
+          identity: null
+          primary_key: null
+          data_type: string
+          length: null
+          return_all_elements: null
+          read_only: null
+        fields: null
+    - name: date
+      description: null
+      data_categories:
+      - system.operations
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references: null
+        identity: null
+        primary_key: null
+        data_type: string
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields: null
+    - name: message
+      description: null
+      data_categories:
+      - user
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references: null
+        identity: null
+        primary_key: null
+        data_type: string
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields: null
+    - name: rating
+      description: null
+      data_categories:
+      - user
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references: null
+        identity: null
+        primary_key: null
+        data_type: integer
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields: null
+    fides_meta: null
+  - name: employee
+    description: null
+    data_categories: null
+    data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+    retention: null
+    fields:
+    - name: _id
+      description: null
+      data_categories:
+      - system.operations
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references: null
+        identity: null
+        primary_key: true
+        data_type: object_id
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields: null
+    - name: email
+      description: null
+      data_categories:
+      - user.contact.email
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references: null
+        identity: email
+        primary_key: null
+        data_type: string
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields: null
+    - name: id
+      description: null
+      data_categories:
+      - user.unique_id
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references:
+        - dataset: mongo_test
+          field: flights.pilots
+          direction: from
+        identity: null
+        primary_key: true
+        data_type: null
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields: null
+    - name: name
+      description: null
+      data_categories:
+      - user.name
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references: null
+        identity: null
+        primary_key: null
+        data_type: string
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields: null
+    fides_meta: null
+  - name: flights
+    description: null
+    data_categories: null
+    data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+    retention: null
+    fields:
+    - name: _id
+      description: null
+      data_categories:
+      - system.operations
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references: null
+        identity: null
+        primary_key: true
+        data_type: object_id
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields: null
+    - name: date
+      description: null
+      data_categories: null
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta: null
+      fields: null
+    - name: flight_no
+      description: null
+      data_categories: null
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta: null
+      fields: null
+    - name: passenger_information
+      description: null
+      data_categories: null
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta: null
+      fields:
+      - name: passenger_ids
+        description: null
+        data_categories: null
+        data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+        retention: null
+        fides_meta:
+          references:
+          - dataset: mongo_test
+            field: customer_details.travel_identifiers
+            direction: from
+          identity: null
+          primary_key: null
+          data_type: string[]
+          length: null
+          return_all_elements: null
+          read_only: null
+        fields: null
+      - name: full_name
+        description: null
+        data_categories:
+        - user.name
+        data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+        retention: null
+        fides_meta:
+          references: null
+          identity: null
+          primary_key: null
+          data_type: string
+          length: null
+          return_all_elements: null
+          read_only: null
+        fields: null
+    - name: pilots
+      description: null
+      data_categories:
+      - system.operations
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references: null
+        identity: null
+        primary_key: null
+        data_type: string[]
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields: null
+    - name: plane
+      description: null
+      data_categories:
+      - system.operations
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references: null
+        identity: null
+        primary_key: null
+        data_type: integer
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields: null
+    fides_meta: null
+  - name: internal_customer_profile
+    description: null
+    data_categories: null
+    data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+    retention: null
+    fields:
+    - name: _id
+      description: null
+      data_categories:
+      - system.operations
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references: null
+        identity: null
+        primary_key: true
+        data_type: object_id
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields: null
+    - name: customer_identifiers
+      description: null
+      data_categories: null
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta: null
+      fields:
+      - name: internal_id
+        description: null
+        data_categories: null
+        data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+        retention: null
+        fides_meta:
+          references:
+          - dataset: mongo_test
+            field: customer_feedback.customer_information.internal_customer_id
+            direction: from
+          identity: null
+          primary_key: null
+          data_type: string
+          length: null
+          return_all_elements: null
+          read_only: null
+        fields: null
+      - name: derived_emails
+        description: null
+        data_categories:
+        - user
+        data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+        retention: null
+        fides_meta:
+          references: null
+          identity: email
+          primary_key: null
+          data_type: string[]
+          length: null
+          return_all_elements: null
+          read_only: null
+        fields: null
+      - name: derived_phone
+        description: null
+        data_categories:
+        - user
+        data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+        retention: null
+        fides_meta:
+          references: null
+          identity: phone_number
+          primary_key: null
+          data_type: string[]
+          length: null
+          return_all_elements: true
+          read_only: null
+        fields: null
+    - name: derived_interests
+      description: null
+      data_categories:
+      - user
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references: null
+        identity: null
+        primary_key: null
+        data_type: string[]
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields: null
+    fides_meta: null
+  - name: payment_card
+    description: null
+    data_categories: null
+    data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+    retention: null
+    fields:
+    - name: _id
+      description: null
+      data_categories:
+      - system.operations
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references: null
+        identity: null
+        primary_key: true
+        data_type: object_id
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields: null
+    - name: billing_address_id
+      description: null
+      data_categories:
+      - system.operations
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta: null
+      fields: null
+    - name: ccn
+      description: null
+      data_categories:
+      - user.financial.bank_account
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references:
+        - dataset: mongo_test
+          field: conversations.thread.ccn
+          direction: from
+        identity: null
+        primary_key: null
+        data_type: null
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields: null
+    - name: code
+      description: null
+      data_categories:
+      - user.financial
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta: null
+      fields: null
+    - name: customer_id
+      description: null
+      data_categories:
+      - user.unique_id
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta: null
+      fields: null
+    - name: id
+      description: null
+      data_categories:
+      - system.operations
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references: null
+        identity: null
+        primary_key: true
+        data_type: null
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields: null
+    - name: name
+      description: null
+      data_categories:
+      - user.financial
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta: null
+      fields: null
+    - name: preferred
+      description: null
+      data_categories:
+      - user
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta: null
+      fields: null
+    fides_meta: null
+  - name: rewards
+    description: null
+    data_categories: null
+    data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+    retention: null
+    fields:
+    - name: _id
+      description: null
+      data_categories: null
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references: null
+        identity: null
+        primary_key: true
+        data_type: object_id
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields: null
+    - name: expiration_date
+      description: null
+      data_categories: null
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta: null
+      fields: null
+    - name: owner
+      description: null
+      data_categories: null
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references: null
+        identity: null
+        primary_key: null
+        data_type: object[]
+        length: null
+        return_all_elements: true
+        read_only: null
+      fields:
+      - name: phone
+        description: null
+        data_categories:
+        - user.contact.phone_number
+        data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+        retention: null
+        fides_meta:
+          references:
+          - dataset: mongo_test
+            field: internal_customer_profile.customer_identifiers.derived_phone
+            direction: from
+          identity: null
+          primary_key: null
+          data_type: string
+          length: null
+          return_all_elements: null
+          read_only: null
+        fields: null
+      - name: shopper_name
+        description: null
+        data_categories: null
+        data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+        retention: null
+        fides_meta: null
+        fields: null
+    - name: points
+      description: null
+      data_categories: null
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: null
+      fides_meta:
+        references: null
+        identity: null
+        primary_key: null
+        data_type: integer
+        length: null
+        return_all_elements: null
+        read_only: null
+      fields: null
+    fides_meta: null
