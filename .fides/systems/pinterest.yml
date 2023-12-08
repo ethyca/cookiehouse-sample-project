@@ -1,0 +1,115 @@
+system:
+- fides_key: pinterest
+  organization_fides_key: default_organization
+  tags: []
+  name: Pinterest
+  description: Content sharing and targeted advertising.
+  registry_id: null
+  meta: null
+  fidesctl_meta: null
+  system_type: ''
+  data_responsibility_title: null
+  egress: null
+  ingress:
+  - fides_key: cookie_house
+    type: system
+    data_categories: null
+  privacy_declarations:
+  - name: Content sharing
+    data_categories:
+    - user.behavior.browsing_history
+    - user.content.public
+    - user.behavior.purchase_history
+    data_use: third_party_sharing
+    data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+    data_subjects:
+    - customer
+    dataset_references: null
+    egress: null
+    ingress: null
+    features: []
+    flexible_legal_basis_for_processing: null
+    legal_basis_for_processing: Legitimate interests
+    impact_assessment_location: ''
+    retention_period: '90'
+    processes_special_category_data: false
+    special_category_legal_basis: null
+    data_shared_with_third_parties: false
+    third_parties: null
+    shared_categories: []
+    cookies:
+    - name: _pin_unauth
+      path: /
+      domain: null
+    id: pri_be9511b8-f4e3-48eb-ad88-3c8e9d10787e
+  - name: Targeted advertising
+    data_categories:
+    - user.behavior.browsing_history
+    - user.behavior.purchase_history
+    - user.behavior.media_consumption
+    data_use: marketing.advertising.first_party.targeted
+    data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+    data_subjects:
+    - customer
+    dataset_references: null
+    egress: null
+    ingress: null
+    features: []
+    flexible_legal_basis_for_processing: null
+    legal_basis_for_processing: Consent
+    impact_assessment_location: ''
+    retention_period: '90'
+    processes_special_category_data: false
+    special_category_legal_basis: null
+    data_shared_with_third_parties: false
+    third_parties: null
+    shared_categories: []
+    cookies:
+    - name: _pin_unauth
+      path: /
+      domain: null
+    id: pri_c8f445f4-938e-4888-9358-6f64c06e58b9
+  joint_controller: null
+  third_country_transfers: null
+  administrating_department: Marketing
+  data_protection_impact_assessment: null
+  vendor_id: null
+  dataset_references: []
+  processes_personal_data: true
+  exempt_from_privacy_regulations: false
+  reason_for_exemption: null
+  uses_profiling: false
+  legal_basis_for_profiling: []
+  does_international_transfers: false
+  legal_basis_for_transfers: []
+  requires_data_protection_assessments: false
+  dpa_location: null
+  dpa_progress: null
+  privacy_policy: https://policy.pinterest.com/en/privacy-policy
+  legal_name: Pinterest Inc.
+  legal_address: '651 Brannan Street,
+
+    San Francisco,
+
+    CA 94107'
+  responsibility:
+  - Controller
+  - Processor
+  dpo: privacy-support@pinterest.com
+  joint_controller_info: Pinterest Inc
+  data_security_practices: ''
+  cookie_max_age_seconds: null
+  uses_cookies: false
+  cookie_refresh: false
+  uses_non_cookie_access: false
+  legitimate_interest_disclosure_url: null
+  created_at: '2023-11-02T14:25:42.128273+00:00'
+  connection_configs: null
+  data_stewards: []
+  cookies:
+  - name: _pin_unauth
+    path: /
+    domain: null
+  - name: _pin_unauth
+    path: /
+    domain: null

@@ -1,0 +1,94 @@
+system:
+- fides_key: cookie_house_postgresql_database
+  organization_fides_key: default_organization
+  tags: null
+  name: Cookie House PostgreSQL Database
+  description: Primary database for Cookie House orders.
+  registry_id: null
+  meta: null
+  fidesctl_meta: null
+  system_type: Database
+  data_responsibility_title: Processor
+  egress:
+  - fides_key: cookie_house
+    type: system
+    data_categories: null
+  ingress: null
+  privacy_declarations:
+  - name: Processing ecommerce orders
+    data_categories:
+    - user.behavior.browsing_history
+    - user.behavior.purchase_history
+    - user.contact
+    - user.financial
+    - user.telemetry
+    data_use: marketing.advertising.third_party.targeted
+    data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+    data_subjects:
+    - customer
+    dataset_references:
+    - postgres_example_test_dataset
+    egress: null
+    ingress: null
+    features: []
+    flexible_legal_basis_for_processing: null
+    legal_basis_for_processing: Legitimate interests
+    impact_assessment_location: null
+    retention_period: null
+    processes_special_category_data: false
+    special_category_legal_basis: null
+    data_shared_with_third_parties: false
+    third_parties: null
+    shared_categories: []
+    cookies: []
+    id: pri_cd6db267-20d6-4cc4-939d-90887032db56
+  joint_controller: null
+  third_country_transfers: null
+  administrating_department: Engineering
+  data_protection_impact_assessment: null
+  vendor_id: null
+  dataset_references: []
+  processes_personal_data: true
+  exempt_from_privacy_regulations: false
+  reason_for_exemption: null
+  uses_profiling: false
+  legal_basis_for_profiling: []
+  does_international_transfers: false
+  legal_basis_for_transfers: []
+  requires_data_protection_assessments: false
+  dpa_location: null
+  dpa_progress: null
+  privacy_policy: null
+  legal_name: null
+  legal_address: null
+  responsibility: []
+  dpo: null
+  joint_controller_info: null
+  data_security_practices: null
+  cookie_max_age_seconds: null
+  uses_cookies: false
+  cookie_refresh: false
+  uses_non_cookie_access: false
+  legitimate_interest_disclosure_url: null
+  created_at: '2023-11-02T14:25:01.061445+00:00'
+  connection_configs:
+    name: Postgres Connector
+    key: cookie_house_postgresql_database
+    description: null
+    connection_type: postgres
+    access: write
+    created_at: '2023-11-02T14:25:01.101840+00:00'
+    updated_at: '2023-11-02T14:25:02.327582+00:00'
+    disabled: false
+    last_test_timestamp: null
+    last_test_succeeded: null
+    saas_config: null
+    secrets:
+      host: postgres-test
+      port: 5432
+      dbname: postgres_example
+      username: postgres
+      password: '**********'
+    authorized: false
+  data_stewards: []
+  cookies: []

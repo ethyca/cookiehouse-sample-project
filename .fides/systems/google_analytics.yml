@@ -1,0 +1,104 @@
+system:
+- fides_key: google_analytics
+  organization_fides_key: default_organization
+  tags:
+  - Marketing
+  name: Google Analytics
+  description: Analytics and marketing reporting
+  registry_id: null
+  meta: null
+  fidesctl_meta: null
+  system_type: ''
+  data_responsibility_title: null
+  egress: null
+  ingress:
+  - fides_key: cookie_house
+    type: system
+    data_categories: null
+  privacy_declarations:
+  - name: Analytics
+    data_categories:
+    - user.behavior.browsing_history
+    - user.behavior.media_consumption
+    - user.device.cookie_id
+    - user.device.ip_address
+    - user.device.device_id
+    data_use: analytics.reporting.ad_performance
+    data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+    data_subjects:
+    - customer
+    dataset_references: null
+    egress: null
+    ingress: null
+    features: []
+    flexible_legal_basis_for_processing: null
+    legal_basis_for_processing: Legitimate interests
+    impact_assessment_location: ''
+    retention_period: '180'
+    processes_special_category_data: false
+    special_category_legal_basis: null
+    data_shared_with_third_parties: false
+    third_parties: null
+    shared_categories: []
+    cookies: []
+    id: pri_05ccfd77-a753-4761-a74b-6a3173e11276
+  - name: Campaign Reporting
+    data_categories:
+    - user.behavior.browsing_history
+    - user.device.device_id
+    - user.device.ip_address
+    - user.device.cookie_id
+    data_use: analytics.reporting.campaign_insights
+    data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+    data_subjects:
+    - customer
+    dataset_references: null
+    egress: null
+    ingress: null
+    features: []
+    flexible_legal_basis_for_processing: null
+    legal_basis_for_processing: Legitimate interests
+    impact_assessment_location: ''
+    retention_period: '180'
+    processes_special_category_data: false
+    special_category_legal_basis: null
+    data_shared_with_third_parties: false
+    third_parties: null
+    shared_categories: []
+    cookies: []
+    id: pri_c18e4647-e242-4fa2-a9b0-00322a8cd268
+  joint_controller: null
+  third_country_transfers: null
+  administrating_department: Marketing
+  data_protection_impact_assessment: null
+  vendor_id: null
+  dataset_references: []
+  processes_personal_data: true
+  exempt_from_privacy_regulations: false
+  reason_for_exemption: null
+  uses_profiling: false
+  legal_basis_for_profiling: []
+  does_international_transfers: false
+  legal_basis_for_transfers: []
+  requires_data_protection_assessments: false
+  dpa_location: null
+  dpa_progress: null
+  privacy_policy: https://policies.google.com/privacy
+  legal_name: Alphabet Inc.
+  legal_address: '1600 Amphitheatre Parkway
+
+    Mountain View, CA 94043'
+  responsibility:
+  - Processor
+  dpo: privacy@google.com
+  joint_controller_info: ''
+  data_security_practices: ''
+  cookie_max_age_seconds: null
+  uses_cookies: false
+  cookie_refresh: false
+  uses_non_cookie_access: false
+  legitimate_interest_disclosure_url: null
+  created_at: '2023-11-02T14:25:42.198417+00:00'
+  connection_configs: null
+  data_stewards: []
+  cookies: []

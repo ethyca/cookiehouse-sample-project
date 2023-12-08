@@ -1,0 +1,101 @@
+system:
+- fides_key: mailchimp
+  organization_fides_key: default_organization
+  tags:
+  - marketing
+  name: Mailchimp
+  description: Marketing communications platform
+  registry_id: null
+  meta: null
+  fidesctl_meta: null
+  system_type: ''
+  data_responsibility_title: null
+  egress: null
+  ingress:
+  - fides_key: cookie_house
+    type: system
+    data_categories: null
+  - fides_key: hubspot
+    type: system
+    data_categories: null
+  privacy_declarations:
+  - name: Email marketing
+    data_categories:
+    - user.account.username
+    - user.behavior
+    - user.contact.email
+    data_use: marketing.communications.email
+    data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+    data_subjects:
+    - customer
+    dataset_references: null
+    egress: null
+    ingress: null
+    features: []
+    flexible_legal_basis_for_processing: null
+    legal_basis_for_processing: Consent
+    impact_assessment_location: ''
+    retention_period: '365'
+    processes_special_category_data: false
+    special_category_legal_basis: null
+    data_shared_with_third_parties: false
+    third_parties: null
+    shared_categories: []
+    cookies: []
+    id: pri_7b99cd07-6e50-48f4-93f5-70c20ed6486b
+  joint_controller: null
+  third_country_transfers: null
+  administrating_department: Marketing
+  data_protection_impact_assessment: null
+  vendor_id: null
+  dataset_references: []
+  processes_personal_data: true
+  exempt_from_privacy_regulations: false
+  reason_for_exemption: null
+  uses_profiling: false
+  legal_basis_for_profiling: []
+  does_international_transfers: false
+  legal_basis_for_transfers: []
+  requires_data_protection_assessments: false
+  dpa_location: null
+  dpa_progress: null
+  privacy_policy: https://www.intuit.com/privacy/statement/
+  legal_name: Intuit Inc
+  legal_address: '2700 Coast Avenue,
+
+    Mountain View,
+
+    CA 94043'
+  responsibility:
+  - Processor
+  dpo: privacy@mailchimp.com
+  joint_controller_info: ''
+  data_security_practices: ''
+  cookie_max_age_seconds: null
+  uses_cookies: false
+  cookie_refresh: false
+  uses_non_cookie_access: false
+  legitimate_interest_disclosure_url: null
+  created_at: '2023-11-02T14:25:42.250671+00:00'
+  connection_configs:
+    name: Mailchimp Connector
+    key: mailchimp_connector
+    description: null
+    connection_type: saas
+    access: write
+    created_at: '2023-11-02T14:25:02.365687+00:00'
+    updated_at: '2023-11-02T14:41:50.426823+00:00'
+    disabled: false
+    last_test_timestamp: '2023-11-02T14:41:50.674955+00:00'
+    last_test_succeeded: true
+    saas_config:
+      fides_key: mailchimp_connector
+      name: Mailchimp
+      type: mailchimp
+    secrets:
+      domain: us19.api.mailchimp.com
+      username: username
+      api_key: '**********'
+    authorized: false
+  data_stewards: []
+  cookies: []

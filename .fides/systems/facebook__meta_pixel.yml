@@ -1,0 +1,106 @@
+system:
+- fides_key: facebook__meta_pixel
+  organization_fides_key: default_organization
+  tags:
+  - marketing
+  name: Facebook / Meta Pixel
+  description: Advertising retargeting and marketing
+  registry_id: null
+  meta: null
+  fidesctl_meta: null
+  system_type: ''
+  data_responsibility_title: null
+  egress: null
+  ingress:
+  - fides_key: cookie_house
+    type: system
+    data_categories: null
+  privacy_declarations:
+  - name: Targeted Advertising
+    data_categories:
+    - user.behavior.browsing_history
+    - user.device.cookie_id
+    - user.device.device_id
+    - user.device.ip_address
+    - user.behavior.purchase_history
+    data_use: marketing.advertising.third_party.targeted
+    data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+    data_subjects:
+    - customer
+    dataset_references: null
+    egress: null
+    ingress: null
+    features: []
+    flexible_legal_basis_for_processing: null
+    legal_basis_for_processing: Consent
+    impact_assessment_location: ''
+    retention_period: '180'
+    processes_special_category_data: false
+    special_category_legal_basis: null
+    data_shared_with_third_parties: false
+    third_parties: null
+    shared_categories: []
+    cookies: []
+    id: pri_df2e15fe-4d4b-4da4-a1e2-98d06b0b4552
+  - name: Targeted Advertising
+    data_categories:
+    - user.behavior.browsing_history
+    - user.behavior.media_consumption
+    - user.contact.email
+    - user.device.device_id
+    - user.device.ip_address
+    - user.behavior.purchase_history
+    data_use: marketing.advertising.first_party.targeted
+    data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+    data_subjects:
+    - customer
+    dataset_references: null
+    egress: null
+    ingress: null
+    features: []
+    flexible_legal_basis_for_processing: null
+    legal_basis_for_processing: Consent
+    impact_assessment_location: ''
+    retention_period: '180'
+    processes_special_category_data: false
+    special_category_legal_basis: null
+    data_shared_with_third_parties: false
+    third_parties: null
+    shared_categories: []
+    cookies: []
+    id: pri_1c24483e-8d3e-4057-8754-8551dc0c5a4b
+  joint_controller: null
+  third_country_transfers: null
+  administrating_department: Marketing
+  data_protection_impact_assessment: null
+  vendor_id: null
+  dataset_references: []
+  processes_personal_data: true
+  exempt_from_privacy_regulations: false
+  reason_for_exemption: null
+  uses_profiling: false
+  legal_basis_for_profiling: []
+  does_international_transfers: false
+  legal_basis_for_transfers: []
+  requires_data_protection_assessments: false
+  dpa_location: null
+  dpa_progress: null
+  privacy_policy: https://www.facebook.com/privacy/policy/
+  legal_name: Meta Inc.
+  legal_address: '1601 Willow Road Menlo Park,
+
+    CA 94025 United States'
+  responsibility:
+  - Processor
+  dpo: privacy@meta.com
+  joint_controller_info: ''
+  data_security_practices: ''
+  cookie_max_age_seconds: null
+  uses_cookies: false
+  cookie_refresh: false
+  uses_non_cookie_access: false
+  legitimate_interest_disclosure_url: null
+  created_at: '2023-11-02T14:25:42.174286+00:00'
+  connection_configs: null
+  data_stewards: []
+  cookies: []
